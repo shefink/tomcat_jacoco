@@ -107,6 +107,10 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.8</version>
         </plugin>
+        <plugin>
+          <artifactId>SonarQube-Scanner</artifactId>
+          <version>2.15</version>
+        </plugin>
 
         <plugin>
           <artifactId>maven-jxr-plugin</artifactId>
