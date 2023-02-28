@@ -15,6 +15,19 @@
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
+  
+ <properties>
+   <sonar.host.url>http://3.15.163.250:9000</sonar.host.url>
+   <sonar.login>sqp_b94c8f8b879d7ea9428e9518b1e8416efcc5d2d7</sonar.login>
+   <sonar.language>java</sonar.language>
+   <sonar.scm.provider>git</sonar.scm.provider>
+</properties>
+         
+<plugin>
+  <groupId>org.sonarsource.scanner.maven</groupId>
+  <artifactId>sonar-maven-plugin</artifactId>
+  <version>3.2</version>
+</plugin>
 
   <modules>
     <module>server</module>
