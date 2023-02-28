@@ -11,20 +11,14 @@
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
 
- <properties>
+  <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-  
     <sonar.host.url>http://3.15.163.250:9000</sonar.host.url>
     <sonar.login>sqp_b94c8f8b879d7ea9428e9518b1e8416efcc5d2d7</sonar.login>
     <sonar.language>java</sonar.language>
     <sonar.scm.provider>git</sonar.scm.provider>
-</properties>         
-<plugin>
-  <groupId>org.sonarsource.scanner.maven</groupId>
-  <artifactId>sonar-maven-plugin</artifactId>
-  <version>3.2</version>
-</plugin>
+  </properties>
 
   <modules>
     <module>server</module>
@@ -61,6 +55,11 @@
   <configuration>
     <failOnMissingWebXml>false</failOnMissingWebXml>
   </configuration>
+      </plugin>
+      <plugin>
+  <groupId>org.sonarsource.scanner.maven</groupId>
+  <artifactId>sonar-maven-plugin</artifactId>
+  <version>3.2</version>
       </plugin>
 
       <plugin>
@@ -116,10 +115,6 @@
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.8</version>
-        </plugin>
-        <plugin>
-          <artifactId>SonarQube-Scanner</artifactId>
-          <version>2.15</version>
         </plugin>
 
         <plugin>
